@@ -1,1 +1,16 @@
 /*  your css code here. If applicable */
+/* Container to hold the images */
+.cards {
+  display: flex;              /* Use flexbox for layout */
+  flex-wrap: wrap;            /* Allow images to wrap to the next line if needed */
+  gap: 10px;                  /* Space between the images */
+}
+
+/* Styling for each image */
+.cards img {
+  margin: 10px;               /* Add margin around each image */
+  border: 3px solid #000;     /* 3px solid black border */
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3); /* Add box-shadow */
+  max-width: 25vw;            /* Set a maximum width of 25% of the viewport width */
+  object-fit: cover;          /* Ensure images fit within the max-width without distortion */
+}
